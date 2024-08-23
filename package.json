@@ -1,55 +1,57 @@
 {
-	"name": "@cartesia/cartesia-js",
-	"author": {
-		"name": "Cartesia",
-		"url": "https://cartesia.ai"
-	},
-	"version": "1.0.2",
-	"description": "Client for the Cartesia API.",
-	"type": "module",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
-		},
-		"./react": {
-			"import": "./dist/react/index.js",
-			"require": "./dist/react/index.cjs"
-		}
-	},
-	"engines": {
-		"node": ">=18"
-	},
-	"dependencies": {
-		"base64-js": "^1.5.1",
-		"cross-fetch": "^4.0.0",
-		"emittery": "^1.0.3",
-		"human-id": "^4.1.1",
-		"partysocket": "^1.0.1"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"scripts": {
-		"build": "tsup src/ --format cjs,esm --dts",
-		"dev": "bun run build -- --watch"
-	},
-	"peerDependencies": {
-		"react": "^18.2.0",
-		"@types/react": "^18.2.58"
-	},
-	"peerDependenciesMeta": {
-		"react": {
-			"optional": true
-		},
-		"@types/react": {
-			"optional": true
-		}
-	},
-	"devDependencies": {
-		"@repo/config-typescript": "workspace:*",
-		"tsup": "^8.0.2"
-	}
+  "name": "cartesia-js",
+  "author": {
+    "name": "Cartesia",
+    "url": "https://cartesia.ai"
+  },
+  "version": "1.0.2",
+  "description": "Client for the Cartesia API.",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "import": "./dist/react/index.js",
+      "require": "./dist/react/index.cjs"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "base64-js": "^1.5.1",
+    "cross-fetch": "^4.0.0",
+    "emittery": "^1.0.3",
+    "human-id": "^4.1.1",
+    "partysocket": "^1.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/ --format cjs,esm --dts",
+    "dev": "bun run build -- --watch"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.2.58",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "react": "^18.3.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.5.4"
+  }
 }

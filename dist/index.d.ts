@@ -1,0 +1,10 @@
+export { Cartesia, Cartesia as default } from './lib/index.js';
+export { Chunk, ClientOptions, CloneOptions, CloneResponse, ConnectionEventData, CreateVoice, EmitteryCallbacks, Emotion, EmotionControl, Encoding, Intensity, MixVoicesOptions, MixVoicesResponse, Sentinel, SourceEventData, StreamOptions, StreamRequest, TypedArray, UpdateVoice, Voice, VoiceOptions, VoiceSpecifier, VoiceToMix, WebSocketBaseResponse, WebSocketChunkResponse, WebSocketErrorResponse, WebSocketOptions, WebSocketResponse, WebSocketTimestampsResponse, WordTimestamps } from './types/index.js';
+export { default as WebPlayer } from './tts/player.js';
+export { default as Source } from './tts/source.js';
+export { default as WebSocket } from './tts/websocket.js';
+import './tts/index.js';
+import './lib/client.js';
+import './voices/index.js';
+import 'emittery';
+import 'partysocket';
